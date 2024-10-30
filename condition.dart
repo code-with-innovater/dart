@@ -1,8 +1,12 @@
 void main(){
-  int age = 14;
-  if(age<18){
-    print("you are an adult");
+  int income= 1400000;
+  double tax;
+  if(income<500000){
+    tax = 0;
+  }else if(income>=500000 && income <1000000){
+     tax = income * 0.2;
   }else{
-    print("you can vote");
+    tax = income*0.3;
   }
+  print(tax);
   }
